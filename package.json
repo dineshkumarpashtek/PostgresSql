@@ -27,7 +27,5 @@
   "engines": {
     "node": ">= 4.5.0"
   },
-  "scripts": {
-    "start": "node your-script.js"
- }
+  
 }
