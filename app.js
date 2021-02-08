@@ -12,8 +12,9 @@ var app = express();
 
 app.set('port', process.env.PORT || 4000);
 
-app.get('/', function (req, res, next) {
-    client.query('SELECT * FROM Employee where id = $1', [1], function (err, result) {      
+app.get('/authentication', function (req, res, next) {
+    console.log('authentication called');
+    client.query('select * from dataextension',  function (err, result) {      
         if (err) {
             console.log(err);
             res.status(400).send(err);
