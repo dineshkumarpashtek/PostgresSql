@@ -12,7 +12,7 @@ var app = express();
 
 app.set('port', process.env.PORT || 4000);
 
-app.get('/authentication', function (req, res, next) {
+app.post('/authentication', function (req, res, next) {
     console.log('authentication called');
     client.query('select * from dataextension',  function (err, result) {      
         if (err) {
