@@ -20,12 +20,10 @@
   "author": "Daniel Abraham <dannibla@outlook.com>",
   "main": "app.js",
   "dependencies": {
+    "bcrypt-nodejs": "latest",
     "express": "^4.16.4",
     "pg": "^7.8.2"
-  },
-  "license": "MIT",
-  "engines": {
-    "node": ">= 4.5.0"
   }
+  
   
 }
